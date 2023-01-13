@@ -1,0 +1,29 @@
+import java.util.*;
+class simpleinterest
+{ 
+public static void main(String args[])
+{ 
+ Scanner sc= new Scanner(System.in);
+ System.out.println("Enter the principal amount:");
+ int p= sc.nextInt(); 
+ System.out.println("Enter number of years:");
+ int t= sc.nextInt(); 
+ System.out.println("Is customer senior citizen (y/n):");
+ char choice = sc.next().charAt(0); 
+ switch (choice)
+ {
+ case 'Y' :
+ case 'y' :
+ int i = (p * t * 12) / 100;
+ System.out.println("Intrest:"+i);
+ break;
+ case 'N' :
+ case 'n' :
+ int j = (p * t * 10) / 100;
+ System.out.println("Intrest:"+j);
+ break;
+ default :
+ System.out.println("Incorrect Input!");
+ }
+ }
+}
