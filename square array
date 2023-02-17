@@ -1,0 +1,15 @@
+ class squarearr {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        int[][] pairs = new int[numbers.length][2];
+
+        for (int i = 0; i < numbers.length; i++) {
+            pairs[i][0] = numbers[i];
+            pairs[i][1] = (int) Math.pow(numbers[i], 2);
+        }
+
+        for (int[] pair : pairs) {
+            System.out.println(pair[0] + " : " + pair[1]);
+        }
+    }
+}
