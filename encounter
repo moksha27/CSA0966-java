@@ -1,0 +1,17 @@
+import java.util.*;
+ class encounter {
+ public static void main(String[] args) {
+ Scanner input = new Scanner(System.in);
+ int sumpos = 0,sumneg = 0,num=0;
+ while(num!='*'){
+ System.out.print("enter the number:- ");
+ num = input.nextInt();
+ if(num>0)
+ sumpos++;
+ else if(num<0)
+ sumneg++;
+ }
+ System.out.println("the no.of.negative values are "+sumneg);
+ System.out.println("the no.of.positive values are "+sumpos);
+ }
+}
